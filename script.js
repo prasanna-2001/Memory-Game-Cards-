@@ -58,7 +58,8 @@ function onCardClicked(e){
             card_clicked = null;
             if(matchFound===8){
                 setTimeout(() => {
-                    alert("you win");
+                    restartgame = document.querySelector('.restartgame');
+                    restartgame.style.visibility = 'visible';
                 }, 500);
             }
         }

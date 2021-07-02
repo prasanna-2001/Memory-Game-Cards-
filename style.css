@@ -1,0 +1,59 @@
+.row{
+    /* justify-content: center;
+     align-items: center;*/  /*in dinio se kaam nhi banta see below what to use */
+     text-align: center;
+} 
+.card{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    /* background-color: rgb(180, 174, 174); */
+}
+.card:hover{
+    /* border: 2px solid red; */
+    /*border is disturbing the alignnment of the other boxexso lets check on the nternet for interal borders*/
+    box-shadow: inset 0px 0px 0px 2px red;
+    box-sizing: border-box;  /*iska kaam samj nhi ay yrr hatane ke baad bhi no effect*/
+    
+}
+
+.hotpink{
+
+    background-color: hotpink ;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow ;
+}
+.skyblue{
+    background-color: skyblue;
+}
+.violet{
+    background-color: violet ;
+}
+.brown{
+    background-color: brown ;
+}
+.maroon{
+    background-color: rgb(10, 9, 9) ;
+}
+
+.card-hidden{
+    background-color: #eee;
+}
+
+.rotate_card
+{
+    animation: rotatehorizontal 1s linear;
+}
+
+@keyframes rotatehorizontal {
+    100%{
+        transform: rotateY(180deg);
+    }
+}
